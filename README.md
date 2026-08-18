@@ -14,11 +14,12 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 4. Perform back substitution: Solve for variables starting from the last row up to the first row. Display the values of unknowns. Stop the program.
 
 ## PROGRAM 
-~
+~~~
+'''
 Program to solve a matrix using Gaussian elimination without partial pivoting.
 Developed by: ANISE KINSELLA A
 RegisterNumber: 212225040021
-```
+'''
 import os
 os.environ['OPENBLAS_NUM_THREADS']='1'
 import numpy as np
@@ -45,8 +46,8 @@ for i in range(n-2,-1,-1):
     x[i] = x[i]/a[i][i]
 for i in range(n):
     print("X%d = %0.2f " %(i,x[i]) ,end= "")
-```
-~
+
+~~~
 
 ## OUTPUT 
 <img width="1292" height="667" alt="image" src="https://github.com/user-attachments/assets/af3109a7-7607-499d-ba84-1940fa9375cf" />
